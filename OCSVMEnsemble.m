@@ -1,7 +1,7 @@
 clear all
 close all
 cd 'D:\Programs\Matlab R2019a\Workspace\SemiSupervised\OCE';
-load('BOTSWANA.mat');
+load('DATA.mat');
 LabData = normalize(reshape(DATA,size(DATA,1)*size(DATA,2),size(DATA,3)),'range');
 LabGT = reshape(GT,size(DATA,1)*size(DATA,2),1);
 count = 1;
